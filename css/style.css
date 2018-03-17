@@ -1,0 +1,454 @@
+
+
+* {
+	margin: 0;
+	padding: 0;
+	color: #fcfbfb;
+	font-family: PingFangTC-Regular, sans-serif,"PingFang SC",苹方黑体-准-简, '苹方黑体-准-简', '.萍方-简'，'苹方黑体';
+	font-weight: normal;
+}
+
+/*  html,body,div,span,strong,h1,h2,h3,h4,h5,h6,p {
+	font-family: 苹方黑体-准-简, '苹方黑体-准-简', '.萍方-简'，'苹方黑体';
+	font-weight: normal;
+} */
+ 
+html {
+	font-size: 10px;
+}
+
+body {
+	margin: 0; 
+	padding: 0; 
+	width: 100%;
+}
+
+#container {
+	width: 100%;
+	max-width: 768px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#myProfile {
+	width: 100%;
+	height: 5.33rem;
+	background-image: url(../img/矩形4@2x.png);
+	background-size: 100% 100%;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #fcfbfb;
+}
+
+.profileItem {
+	display: inline-block;
+	height: 0.53rem;
+}
+
+.avatarWrap {
+	width: 2.13rem;
+	height: 2.13rem;
+	margin-top: 0.53rem;
+}
+
+.avatar {
+	width: 2.13rem;
+	height: 2.13rem;
+	border-radius: 100%;
+	box-shadow: 3px 5px 8px #666;
+}
+
+.myName {
+	font-size: 0.43rem;
+	margin-top: 0.4rem;
+}
+
+.myID {
+	font-size: 0.32rem;
+}
+
+.jindouWrap {
+	width: 5.6rem;
+	height: 0.5rem;
+	margin-top: 0.45rem;
+	font-size: 0.27rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.jindouWrap span {
+	display: inline-block;
+}
+
+.jindouNum{
+	font-size: 0.53rem;
+}
+
+.arrow {
+	width: 0.1rem;
+	height: 0.1rem;
+	border-top: 1px solid #fcfbfb;
+	border-right: 1px solid #fcfbfb;
+	transform: rotate(45deg);
+}
+
+.signIn {
+	width: 100%;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	background-color: #e4e3e3;
+	font-size: 0.29rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+.signIn p {
+	display: inline-block;
+	padding-left: 0.5rem;
+	margin: 0;
+	color: #333;
+}
+
+.signIn strong {
+	color: #333;
+}
+
+#signInBtn {
+	width: 1.2rem;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	border: none;
+	border-radius: 0.3rem;
+	background-color: #333;
+	color: #fcfbfb;
+	font-size: 0.29rem;
+	margin-right: 0.5rem;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* #mySchedule */
+#mySchedule {
+	width: 100%;
+}
+
+.titleWrap {
+	position: relative;
+	width: 100%;
+	height: 0.86rem;
+}
+
+.line01 {
+	width: 10rem;
+	position: absolute;
+	top: 0.43rem;
+	left: 0;
+}
+
+.title {
+	display: inline-block;
+	position: absolute;
+	left: 4.25rem;
+	top: 0.2rem;
+	font-size: 0.35rem;
+	color: #040404;
+}
+
+.content {
+	width: 9.33rem;
+	height: 5.11rem;
+	background-image: url(../img/进行中.png);
+	background-size: 100% 100%;
+	margin: 0.1rem auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.battleTitle {
+	margin-top: 0.75rem;
+	font-size: 0.51rem;
+}
+
+.subTitle {
+	font-size: 0.51rem;
+
+}
+
+.battleRecords {
+	width: 7.74rem;
+	font-size: 0.4rem;
+}
+
+.recordsTitle {
+	width: 6.4rem;
+	height: 0.48rem;
+	margin: 0.8rem auto 0 auto;
+	position: relative;
+}
+
+.recordsTitle img {
+	width: 6.4rem;
+	position: absolute;
+	top: 0.24rem;
+	left: 0;
+}
+
+.recordsTitle span {
+	position: absolute;
+	top: 0;
+	left: 2.82rem;
+}
+
+.recordsDetail {
+	width: 7.74rem;
+	height: 0.6rem;
+	margin-top: 0.46rem;
+}
+
+.recordsDetail span {
+	display: inline-block;
+	height: 0.6rem;
+}
+
+.totalNum {
+	width: 2.13rem;
+}
+
+.winNum {
+	width: 1.34rem;
+	margin-right: 0.2rem;
+	text-align: right;
+}
+
+.loseNum {
+	width: 1.34rem;
+	margin-left: 0.2rem;
+}
+
+.winningRate {
+	width: 2.13rem;
+	text-align: right;
+}
+
+/* #myBattles */
+.line02 {
+	width: 7.2rem;
+	position: absolute;
+	top: 0.43rem;
+	left: 1.4rem;
+}
+
+.unopened {
+	width: 9.33rem;
+	height: 3.73rem;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+}
+
+.me {
+	width: 2.13rem;
+	height: 3.73rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.avatarWrap02 {
+	width: 2.13rem;
+	height: 2.13rem;
+	margin-top: 0.1rem;
+}
+
+.userName {
+	display: inline-block;
+	margin-top: 0.2rem;
+	width: 2.13rem;
+	height: 0.34rem;
+	line-height: 0.34rem;
+	text-align: center;
+	font-size: 0.33rem;
+	color: #252727;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+.battleDetail {
+	width: 5.07rem;
+	height: 3.73rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.date {
+	font-size: 0.35rem;
+	color: #252727;
+}
+
+.score {
+	font-size: 0.8rem;
+	color: #020202;
+}
+
+.status {
+	font-size: 0.27rem;
+	color: #ec1414;
+}
+
+.address {
+	font-size: 0.35rem;
+	color: #252727;
+}
+
+.opponent {
+	width: 2.13rem;
+	height: 3.73rem;
+}
+
+.histBattles {
+	width: 9.33rem;
+	margin: 0.5rem auto 0.66rem auto;
+}
+
+.histBattle {
+	width: 100%;
+	height: 3.15rem;
+	border-top: 0.03rem solid #e5e4e4;
+}
+
+.histDetail {
+	width: 100%;
+	height: 2.5rem;
+}
+
+.histPlayers {
+	width: 6.96rem;
+	height: 2rem;
+	margin: 0.25rem 0;
+	float: left;
+}
+
+.histPlayer {
+	width: 6.96rem;
+	height: 1rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.smAvatar {
+	width: 0.86rem;
+	height: 0.86rem;
+	border-radius: 50%;
+}
+
+.playerName {
+	display: inline-block;
+	width: 2.9rem;
+	margin: 0 0.5rem;
+	font-size: 0.33rem;
+	color: #252727;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+.histScore {
+	font-size: 0.64rem;
+	font-weight: bold; 
+	color: #020202;
+}
+
+.result {
+	width: 2.37rem;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	float: right;
+	text-align: right;
+	font-size: 0.59rem;
+	font-family: BerlinSansFB-Bold, Berlin Sans FB;
+	font-weight: bold;
+}
+
+.win {
+	color: #f60e24;
+}
+
+.lose {
+	color: #4541f7;
+}
+
+.histInfo {
+	width: 100%;
+	font-size: 0.24rem;
+	background-color: grey;
+	color: #252727;
+}
+
+.histInfo span {
+	color: #252727;
+	height: 0.4rem;
+	line-height: 0.4rem;
+}
+
+.histTime {
+	display: inline-block;
+	width: 4.43rem;
+	margin-right: 0.3rem;
+	float: left;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+.histAddress {
+	display: inline-block;
+	width: 4.6rem;
+	float: left;
+}
+
+/* #otherBattles */
+.otherContent {
+	width: 9.33rem;
+	height: 4.93rem;
+	background-image: url(../img/组5_1.png);
+	background-size: 100% 100%;
+	margin: 0.1rem auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+footer {
+	width: 100%;
+	margin-top: 0.6rem;
+	margin-bottom: 0.24rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer span {
+	color: #929292;
+	font-size: 0.4rem;
+}
+
+footer img {
+	width: 0.16rem;
+	height: 0.6rem;
+	margin-top: 0.16rem;
+}

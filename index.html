@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/ui.css">
+	<title>个人信息</title>
+	<script type="text/javascript">
+		(function() {
+    		var newRem = function() {
+        		var html = document.documentElement;
+        		var deviceWidth = html.getBoundingClientRect().width;
+        		if ( deviceWidth < 768 ){
+        			html.style.fontSize = deviceWidth / 10 + 'px';
+        		}
+        		else{
+        			html.style.fontSize = 768 / 10 + 'px';
+        		}
+    		};
+    		window.addEventListener('resize', newRem, false);
+    		newRem();
+		})();
+	</script>
+</head>
+<body>
+
+	<div id="container">
+		
+		<div id="myProfile">
+			<div class="avatarWrap">
+				<img class="avatar" src="img/微信图片_20171023102209@2x.png" alt="">
+			</div>
+			<span class="myName profileItem">祖国的一朵枪</span>
+			<span class="myID profileItem">ID: 5485696</span>
+			<div class="jindouWrap profileItem">
+				<span class="jindou">金豆</span>
+				<span class="jindouNum">100</span>
+				<span>|</span>
+				<span class="jindouRecords">查看记录</span>
+				<b class="arrow"></b>
+			</div>
+		</div>
+
+		<div class="signIn">
+			<p>您已签到&nbsp<strong>1</strong>&nbsp天，下次签到您将获得&nbsp<strong>20</strong>&nbsp金豆</p>
+			<button id="signInBtn">签到</button>
+			<div id="dialogBg"></div>
+			<div id="dialog">
+				<img class="dialogTitle" src="img/每周签到奖励.png" alt="">
+				<img class="closeIco" src="img/关闭.png" alt="">
+				<button class="dialogBtn">签到</button>
+				<span class="success">恭喜您签到成功<br>获得20金豆</span>
+			</div>
+		</div>
+
+
+
+		<div id="mySchedule">
+			<div class="titleWrap">
+				<span class="title">我的赛程</span>
+				<img class="line01" src="img/矩形 8 拷贝 4.png" alt="">
+			</div>
+			<div class="content">
+				<span class="battleTitle">NBA 2K18 亚洲锦标赛</span>
+				<span class="subTitle">中国区资格赛</span>
+				<div class="battleRecords">
+					<div class="recordsTitle">
+						<span>战绩</span>
+						<img src="img/矩形 10 拷贝.png" alt="">
+					</div>
+					<div class="recordsDetail">
+						<span class="totalNum">总场次0</span>
+						<span class="winNum">胜0</span>
+						<span class="loseNum">负0</span>
+						<span class="winningRate">胜率0</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="myBattles">
+			<div class="titleWrap">
+				<span class="title">我的比赛</span>
+				<img class="line02" src="img/矩形 10 拷贝 3.png" alt="">
+			</div>
+			<div class="unopened"> 
+				<div class="me">
+					<div class="avatarWrap02">
+						<img class="avatar" src="img/微信图片_20171101162108.png" alt="">
+					</div>
+					<span class="userName">孙悟空</span>
+				</div>
+				<div class="battleDetail">
+					<span class="date">2017-12-01 星期一</span>
+					<span class="score">0 - 0</span>
+					<span class="status">未开始</span>
+					<span class="address">地点：M78 星云</span>
+				</div>
+				<div class="opponent">
+					<div class="avatarWrap02">
+						<img class="avatar" src="img/微信图片_20171101162119@2x.png" alt="">
+					</div>
+					<span class="userName" style="color: #242cde">机车少女</span>
+				</div>
+			</div>
+			<div class="histBattles">
+				<div class="histBattle">
+					<div class="histDetail">
+						<div class="histPlayers">
+							<div class="histPlayer">
+								<img class="smAvatar" src="img/微信图片_20171101162108.png" alt="">
+								<span class="playerName">孙悟空</span>
+								<span class="histScore win">36</span>
+							</div>
+							<div class="histPlayer">
+								<img class="smAvatar" src="img/微信图片_20171017160831.png" alt="">
+								<span class="playerName">大波女孩</span>
+								<span class="histScore">34</span>
+							</div>
+						</div>
+						<div class="result win">
+							Win
+						</div>
+					</div>
+					<div class="histInfo">
+						<span class="histTime">2017-11-12&nbsp&nbsp&nbsp星期一&nbsp&nbsp&nbsp13:52</span>
+						<span class="histAddress">赛博坦星球</span>
+					</div>
+				</div>
+				<div class="histBattle">
+					<div class="histDetail">
+						<div class="histPlayers">
+							<div class="histPlayer">
+								<img class="smAvatar" src="img/微信图片_20171101162108.png" alt="">
+								<span class="playerName">孙悟空</span>
+								<span class="histScore lose">36</span>
+							</div>
+							<div class="histPlayer">
+								<img class="smAvatar" src="img/微信图片_20171024112611.png" alt="">
+								<span class="playerName">我不爱穿衣服</span>
+								<span class="histScore">38</span>
+							</div>
+						</div>
+						<div class="result lose">
+							Lose
+						</div>
+					</div>
+					<div class="histInfo">
+						<span class="histTime">2017-11-12&nbsp&nbsp&nbsp星期一&nbsp&nbsp&nbsp13:52</span>
+						<span class="histAddress">赛博坦星球</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="otherBattles">
+			<div class="titleWrap">
+				<span class="title">其他赛事</span>
+				<img class="line01" src="img/矩形 8 拷贝 4.png" alt="">
+			</div>
+			<div class="otherContent">
+				<span class="battleTitle">拳皇 14 亚洲锦标赛</span>
+				<span class="subTitle">中国区资格赛</span>
+			</div>
+		</div>
+
+		<footer>
+			<span>敬请期待</span>
+			<img src="img/椭圆5拷贝2.png" alt="">
+		</footer>
+
+	</div>
+	
+	<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
