@@ -9,11 +9,12 @@
          src: url('../fonts/PingFang SC Regular/PingFang_SC_Regular.svg#PingFang SC') format('svg');
 
          font-family: "Berlin Sans FB";
-         src: url(../fonts/Berlin Sans FB/BRLNSR.TTF) format('truetype');
-         src: url(../fonts/Berlin Sans FB/BRLNSR.eot);
-         src: url(../fonts/Berlin Sans FB/BRLNSR.woff) format('woff');
-         src: url(../fonts/Berlin Sans FB/BRLNSR.svg#Berlin Sans FB) format('svg');
+         src: url('../fonts/Berlin Sans FB/BRLNSR.TTF') format('truetype');
+         src: url('../fonts/Berlin Sans FB/BRLNSR.eot');
+         src: url('../fonts/Berlin Sans FB/BRLNSR.woff') format('woff');
+         src: url('../fonts/Berlin Sans FB/BRLNSR.svg#Berlin Sans FB') format('svg');
  }
+
 
 * {
 	margin: 0;
@@ -41,7 +42,7 @@ body {
 	width: 100%;
 	max-width: 768px;
 	margin: 0 auto;
-	position: relative;
+	/* position: relative; */
 }
 
 #myProfile {

@@ -16,17 +16,20 @@
 	height: 7.02rem; 
 	margin: 0 auto; 
 	display: none; 
-	/* background-color: #ffffff;  */
 	background-image: url(../img/bg01.png);
 	background-size: 100% 100%;
+	
 	/* margin: 2.63rem auto 0 auto; */
-	position: absolute;
-	top: 2.63rem;
-	left: 1.17rem; 
-	/* position: fixed; 
-	top:  50%; 
+	
+	/* position: absolute;
+	 top: 2.63rem;
+	 left: 1.17rem; */ 
+	
+	position: fixed; 
+	top:  2.63rem; 
 	left: 50%; 
-	margin: -3.51rem 0 0 -3.83rem;  */
+	margin: 0 0 0 -3.83rem;  
+	
 	z-index: 10000; 
 	border-radius: 0.08rem; 
 	-webkit-border-radius: 0.08rem; 
@@ -34,15 +37,7 @@
 	-webkit-box-shadow: 3px 2px 4px rgba(0,0,0,0.2); 
 }
 
-// .bg01 {
-// 	background-image: url(../img/bg01.png);
-// 	background-size: 100% 100%;
-// }
 
-// .bg02 {
-// 	background-image: url(../img/bg02.png);
-// 	background-size: 100% 100%;
-// }
 
 .dialogTitle {
 	width: 6.9rem;
