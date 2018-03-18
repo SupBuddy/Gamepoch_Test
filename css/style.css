@@ -236,7 +236,7 @@ button:focus {
 }
 
 .totalNum {
-	width: 2.13rem;
+	width: 2rem;
 }
 
 .winNum {
@@ -251,7 +251,7 @@ button:focus {
 }
 
 .winningRate {
-	width: 2.13rem;
+	width: 2rem;
 	text-align: right;
 }
 
